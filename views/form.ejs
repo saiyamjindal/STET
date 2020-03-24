@@ -1,0 +1,165 @@
+<html>
+
+<head>
+    <title>STET EXAM REGISTRATION</title>
+</head>
+
+<body>
+    <style>
+        #hd {
+            height: 20px;
+            width: 200px;
+            background-color: whitesmoke;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        #d {
+            height: 30px;
+            width: 300px;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+    </style>
+
+    <div style="height:10%;width:100%;background-color: darkblue"></div>
+    <div style="height:80%;width:100%;background-color:white;padding-left:30px">
+
+        <h1 style="margin-left:40%;color:red;font-size:20px">Registration Form/पंजीकरण फॉर्म</h1>
+        <form method="post" enctype="multipart/form-data" >
+            <div id="d">Personal Details/व्यक्तिगत विवरण</div>
+            <div style="height:30%;width:100%;background-color: white;border:5px solid gray;display:flex">
+                <div style="height:100%;width:50%;padding-left:400px;">
+
+
+                    Candidate's Name/उम्मीदवार का नाम:<input name="candname" id="hd" type="text">
+                    <br>
+                    Mother's Name/माता का नाम :<input type="text" id="hd" name="mname">
+                    <br>
+                    Identity Type/पहचान के प्रकार :<select id="hd" name="idname">
+                        <option value="select">Select</option>
+                        <option value="Voter Id">Voter Id</option>
+                        <option value="Passport No.">Passport No.</option>
+                        <option value="Driving License">Driving License</option>
+                        <option value="Aadhar Card ">Aadhar Card</option>
+                    </select>
+
+                </div>
+                <div style="height:100%;width:50%">
+
+                    Father's Name/पिता का नाम:<input name="Fname" type="text" id="hd">
+                    <br>
+                    Date Of Birth/जन्म की तारीख :<input name="Dob" type="date" id="hd">
+                    <br>
+                    Gender/ लिंग :<select name="Gender" id="hd">
+                        <option value="select">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Transgender">Transgender</option>
+
+                    </select>
+
+                </div>
+            </div>
+            <br>
+            <div id="d">Contact Details/संपर्क विवरण</div>
+            <div style="height:50%;width:100%;background-color: white;border:5px solid gray;display:flex">
+                <div style="height:100%;width:50%;padding-left:400px;">
+
+                    Address/पता:<input type="text" id="hd" name="candadd">
+                    <br>
+                    City/Town/Village:<input type="text" id="hd" name="city">
+                    <br>
+                    District/जिला :<input type="text" id="hd" name="dist">
+                    <br>
+                    Email Address/ईमेल पता :<input type="email" id="hd" name="email">
+                    <br>
+                    Land Line No./लैंडलाइन नंबर :<input type="text" id="hd" name="land">
+
+                </div>
+                <div style="height:100%;width:50%">
+
+                    Locality(optional)/इलाके:<input type="text" id="hd" name="local">
+                    <br>
+                    State/राज्य :<input type="text" id="hd" name="state">
+                    <br>
+                    Pincode/पिन कोड:<input type="text" id="hd" name="pin">
+                    <br>
+                    Mobile No./मोबाइल न:<input type="text" id="hd" name="mob">
+
+                </div>
+            </div>
+            <br>
+            <div id="d">Choose Password/पासवर्ड चुनें</div>
+            <div style="height:30%;width:100%;background-color: white;border:5px solid gray;display:flex">
+                <div style="height:100%;width:50%;padding-left:400px;">
+
+                    Password/कुंजिका:<input type="password" id="hd" name="password">
+                    <br>
+                    Security Question/सुरक्षा प्रश्न:<select id="hd" name="security">
+                        <option value="select">Select</option>
+                        <option value="Which is the website you really visit?">Which is the website you really
+                            visit?
+                        </option>
+                        <option value="What is the name of your first school?">What is the name of your first
+                            school?
+                        </option>
+                        <option value="Which is your favourite book? ">Which is your favourite book? </option>
+                        <option value="What is your neighbour's pet name ?">What is your neighbour's pet name ?
+                        </option>
+                    </select>
+
+
+                </div>
+                <div style="height:100%;width:50%">
+
+                    Confirm password/पासवर्ड की पुष्टि कीजिये:<input type="password" id="hd" name="cpassword">
+                    <br>
+                    Security Answer/सुरक्षा जवाब :<input type="text" id="hd" name="securityans">
+
+
+                </div>
+            </div>
+            <br>
+            <div style="height:30px;width:330px;background-color:blue;color:white;font-size:20px;border-radius:10px ;">
+                Examination Details/परीक्षा का विवरण</div>
+            <div style="height:20%;width:100%;background-color: white;border:5px solid gray;display:flex">
+                <div style="height:100%;width:50%;padding-left:400px;">
+
+                    Question paper Medium/प्रश्न पत्र माध्यम:<select id="hd" name="quemed">
+                        <option value="select">Select</option>
+                        <option value="English">English</option>
+                        <option value="Hindi">हिंदी</option>
+                    </select>
+                </div>
+                <div style="height:100%;width:50%">
+
+                    Examination city/परीक्षा शहर:<select id="hd" name="Coe">
+                        <option value="select">Select</option>
+                        <option value="Gangtok">Gangtok</option>
+                        <option value="Lachung">Lachung</option>
+                        <option value="Namchi">Namchi </option>
+                        <option value="Pelling">Pelling</option>
+                        <option value="Ravangla">Ravangla</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div style="height:30px;width:330px;background-color:blue;color:white;font-size:20px;border-radius:10px ;">
+                Upload Signature</div>
+               
+                <div style="height:20%;width:100%;background-color: white;border:5px solid gray;display:flex">
+                    <div style="height:100%;width:50%;padding-left:400px;">
+                    Signature: <input type="file" id="hd" name="file">
+                    </div>
+                </div>
+                <br>
+            <button name="button" type="submit"
+                style="height:50px;width:200px;margin-left:45%;background-color:blue;color:white;font-size:20px;">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

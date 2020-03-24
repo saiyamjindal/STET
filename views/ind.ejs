@@ -1,0 +1,38 @@
+<html>
+
+    <body>
+        
+        <% if (fileUploaded){ %>
+        File Uploaded
+        <% } %>
+        
+        <h1>UPLOAD PHOTOS</h1>
+        <form method="post" enctype="multipart/form-data" >
+           
+         PHOTO UPLOAD: <input type="file" name="file" />
+        
+            
+            <input type="submit" style = "background-color: blue;color:white;height:30px;width:80px" />
+            
+</form>     
+</br>
+</br>
+<h1>UPLOAD DOCUMENTS</h1>
+</br>
+        <form method="post" enctype="multipart/form-data" action="multiple">
+           AADHAR CARD <input type="file" name="file" />
+           <br/>
+        </br>
+            TENTH MARK SHEET<input type="file" name="file" />
+            <br/>
+    </br>
+           TWELTH MARKSHEET <input type="file" name="file" />
+           <br/>
+</br>
+            <input type="submit" style = "background-color: blue;color:white;height:30px;width:80px" />
+        </form>
+
+<button onclick ="location.href= 'http://localhost:3001'" type="button">LOG OUT</button>
+    </body>
+
+</html>

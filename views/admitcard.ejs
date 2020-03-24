@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <style>
+        .info {
+            width: 100%;
+            padding-top: 5px;
+            padding-left: 5px;
+            border: 1px solid;
+            box-sizing: border-box;
+            text-justify: auto;
+        }
+
+        p {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .myclass {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1000px;
+        }
+
+        @media print {
+            #printPageButton {
+                display: none;
+            }
+        }
+    </style>
+    <script>
+        function myfunction() {
+            window.print();
+        }
+    </script>
+</head>
+
+<body>
+    <p> </p>
+    <div class="myclass" style="height: 150px; box-sizing: content-box;">
+        <img src="/images/logo.jpg" alt="logo" style=" display:block; height: 98%" align="left" />
+        <h1 style="text-align: center">Education Department, Govt. of Sikkim</h1>
+        <h2 style="text-align: center">ADMIT CARD FOR STATE TEACHER ELIGIBILITY TEST-FEB 2020</h2>
+        <h3 style="text-align: center">(STET FEB 2020)</h3>
+    </div>
+    <div class="myclass"
+        style="display: flex;height: 500px;border:1px solid; box-sizing: border-box;  border-right: none">
+        <div style="height: 100%; width: 50%; border:1px solid;box-sizing: border-box; border-right: none;">
+            <div class="info" style="height: 20%">Center of Examination/परीक्षा का केंद्र:<b> <%=tasks.Coe %></b></div>
+            <div class="info" style="height: 40%">Candidate's Address/उम्मीदवार का पता:<b> <%=tasks.candadd %></b></div>
+            <div class="info" style="height: 20%">Candidate's Name/उम्मीदवार का नाम:<b> <%=tasks.candname %></b></div>
+            <div class="info" style="height: 20%">Father's Name/पिता का नाम: <b><%=tasks.Fname %></b></div>
+        </div>
+        <div style="height: 100%; width: 35%; border:1px solid; box-sizing: border-box;  border-right: none">
+            <div class="info" style="height: 10%">D.O.B./जन्म तिथि: <b><%=tasks.Dob %></b></div>
+            <div class="info" style="height: 10%">Gender/लिंग: <b><%=tasks.Gender %></b></div>
+            <div class="info" style="height: 14%">Question Paper Medium/प्रश्न पत्र माध्यम:<b> <%=tasks.quemed %></b>
+            </div>
+            <div class="info" style="height: 13%">Date Of Exam/परीक्षा की तारीख: <b>16 Feb., 2020</b></div>
+            <div class="info" style="height: 13%">Timings/समय: <b>1000hrs-1300hrs</b></div>
+            <div class="info" style="height: 40%">STET Director Signature/निदेशक के हस्ताक्षर: <img src="/images/Directorsign.jpg" style="display: block; width: 228px; height: 136px; margin-left: auto;margin-right: auto;"/></div>
+        </div>
+        <div style="height: 100%; width: 15%; border:1px solid; box-sizing: border-box;  border-right: none">
+            <div class="info" style="height: 20%; border-right: 2px solid">Roll No./अनुक्रमांक:</div>
+            <div class="info" style="height: 40%; border-right: 2px solid"><img src = "/uploads/<%= uploads.image %>" style="display:block; width: 135px; height: 135px; margin-left: auto;margin-right: auto;"/></div>
+            <div class="info" style="height: 25%; border-right: 2px solid"><img src = "/uploads/<%= tasks.signature %>" style="display:block; width: 135px; height: 70px; margin-left: auto;margin-right: auto;"/></div>
+            <div
+                style="height: 15%; width: 100%; border: 1px solid; text-align: center; box-sizing: border-box; border-right: 2px solid; padding-top: 5px;">
+                Candidate's Signature/उम्मीदवार के हस्ताक्षर</div>
+        </div>
+    </div>
+    <div class="myclass" style="height: 600px;border:2px solid; box-sizing: border-box;">
+        <p style="color: crimson"><b>NOTE:</b></p>
+        <p style="color: crimson">In case of the candidate whose Signature and/or Photograph is missing or is not
+            proper/visible on the above online admit card for STET - Feb 2020, such candidate may send a scanned copy of
+            their signature and photograph to STET unit by mail latest by 12.02.2020 for inclusion in the admit card.
+        </p>
+        <p><b><i>IMPORTANT INSTRUCTIONS FOR THE CANDIDATES:</i></b></p>
+        <p><b>1. Candidate will not be allowed to enter at the examination center after the commencement of the
+                examination under any circumstances.</b></p>
+        <p>2. The candidate should report <b>45 minutes</b> before the commencement of the examination.</p>
+        <p>3. Candidates without Admit Card shall not be allowed in the examination under any circumstances by the
+            Center Superintendent.</p>
+        <p>4. Candidates shall not be allowed to leave the Examination Hall before the conclusion of the Examination and
+            without handing over the Answer Sheet to the Invigilator concerned.</p>
+        <p>5. Candidates should check and ensure that the Test booklet contains as many number of pages as written on
+            the top of the cover page.</p>
+        <p>6. Candidates shall not remove any page(s) from the Test Booklet and if any page(s) is/are found missing from
+            his/her Test Booklet, he/she may be liable for suitable action.</p>
+        <p>7. Use only <b>Blue/Black ball point pen</b> for darkening of responses. <b>USE OF PENCIL IS STRICTLY
+                PROHIBITED.</b></p>
+        <p>8. Calculators, Log tables, Calculating devices, Communication Devices like Cellular Phone/Pager etc. and
+            textual material is strictly prohibited in the Examination Hall.</p>
+        <p>9. Candidates must follow the instructions strictly as contained in the Information Bulletin.</p>
+        <p><b>10. The Admit Card is issued provisionally to the candidate as per the information provided by him/her.
+                The eligibility of the candidate has not been verified by the Board. The appointing authority/recruiting
+                agency will verify the same before appointment/recruitment. Qualifying the STET would not confer a right
+                on any person for recruitment/employment.</b></p>
+    </div>
+    <div class="myclass" style="height: 30px">
+        <button id="printPageButton" type="button" onclick="myfunction()">Print</button>
+        <button id="printPageButton" type="button" onclick="location.href= 'http://localhost:3000/'">Home</button>
+    </div>
+</body>
+
+</html>
